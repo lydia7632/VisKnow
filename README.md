@@ -1,4 +1,4 @@
-# Academic Project Page Template
+# VisKnow Project Page Template
 
 
 ## Website License
