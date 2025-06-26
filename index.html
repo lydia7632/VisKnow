@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -26,15 +27,13 @@
 
   <title>VisKnow</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -45,7 +44,68 @@
   <script src="static/js/index.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
+  <style>
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+      border-radius: 6px;
+      background: white;
+    }
+
+    table {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    th {
+      font-weight: 600;
+      background-color: #f5f5f5;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .has-background-light {
+      background-color: #f5f5f5 !important;
+    }
+
+    .has-text-centered {
+      text-align: center;
+    }
+
+    .header-row {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .subheader-row {
+      background-color: #f8f8f8;
+      font-style: italic;
+    }
+
+    .section-title {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .table-title {
+      margin-bottom: 0.8rem;
+    }
+
+    .metrics-table {
+      min-width: 700px;
+    }
+  </style>
+
 </head>
+
 <body>
 
 
@@ -54,54 +114,53 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">VisKnow: Construction and Application of Multi-Granularity Visual Knowledge Base</h1>
+            <h1 class="title is-1 publication-title" style="font-size: 2.75rem;">VisKnow: Construction and Application
+              of Visual
+              Knowledge Base for Object Understanding</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ziwei Yao</a>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Qiyang Wan</a>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Ruiping Wang</a>,</span>
-                  </span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xilin Chen</a>
-                  </span>
-                  </div>
+                <a href="#">Ziwei Yao</a>,</span>
+              <span class="author-block">
+                <a href="#">Qiyang Wan</a>,</span>
+              <span class="author-block">
+                <a href="#">Ruiping Wang</a>,</span>
+              </span>
+              <span class="author-block">
+                <a href="#">Xilin Chen</a>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Key Laboratory of AI Safety of CAS, Institute of Computing Technology,
-                    <br>Chinese Academy of Sciences(CAS), Beijing, China</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Key Laboratory of AI Safety of CAS, Institute of Computing Technology,
+                <br>Chinese Academy of Sciences(CAS), Beijing, China</span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -120,141 +179,705 @@
                 </a>
               </span> -->
 
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/pdfs/first_img.jpg" alt="PDF Snapshot" style="width: 100%;">
-      <h2 class="subtitle has-text-centered">
-        Multi-modal AnimalKB constructed by the proposed VisKnow framework can be applied in various aspects, including
-        enhancing knowledge-related visual tasks, providing annotations required for constructing benchmarks, and
-        assisting downstream scenarios.
-      </h2>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/pdfs/first_img.jpg" alt="PDF Snapshot" style="width: 100%;">
+        <h2 class="subtitle has-text-centered">
+          Multi-modal AnimalKB constructed by the proposed VisKnow framework can be applied in various aspects,
+          including
+          enhancing knowledge-related visual tasks, providing annotations required for constructing benchmarks, and
+          assisting downstream scenarios.
+        </h2>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-Knowledge plays a pivotal role in visual understanding tasks, providing a pathway for alignment between AI models and
-humans.
-Most existing knowledge bases predominantly contain textual knowledge extracted from corpora and lack
-visual knowledge entries closely related to visual elements, such as textures and parts.
-Incorporating such visual knowledge can significantly enhance fine-grained, interpretable, and transferable visual
-understanding tasks.
-Visual knowledge remains limited due to its high acquisition cost.
-In response, we propose a Visual Knowledge base construction framework called VisKnow that
-extracts multi-modal, multi-granularity knowledge for advanced visual understanding.
-It integrates enriched text-based knowledge, region-level visual knowledge, and a robust alignment between visual and
-textual modalities.
-By leveraging this framework, we construct AnimalKB, a comprehensive animal knowledge base comprising 406
-encyclopedic articles, 400k images, and 480k part-level annotations.
-Through a series of experiments, we showcase how AnimalKB enhances multiple visual tasks, serves as outstanding
-benchmarks for knowledge graph completion and part segmentation tasks, and helps to build downstream KB-guided
-applications such as introduction system for museums and nature reserve.
-Our findings highlight the potential of automatic construction of visual knowledge bases assisted with large models to
-further improve visual understanding and the corresponding practical applications.
-          </p>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Understanding objects is fundamental to computer vision.
+              Although object recognition has achieved remarkable progress, its performance remains suboptimal in
+              data-scarce scenarios such as zero-shot, few-shot, or fine-grained tasks, primarily due to insufficient
+              object understanding.
+              In-depth object understanding encompasses the recognition of internal features (e.g., key appearances and
+              constituent components) and external features (e.g., relationships with other categories and relevant
+              contextual background knowledge), acting as a crucial bridge for enhancing transferability and
+              generalization.
+              It requires visual knowledge annotations beyond basic category labels, closely related to visual elements
+              such as attributes, parts, co-occurrences, and similarities.
+              However, the availability of such knowledge is limited due to the high cost of acquisition.
+              In response, we propose a visual knowledge base construction framework called VisKnow that extracts
+              multi-modal, object-level knowledge for object understanding, through expert design and the utilization of
+              large models to enhance the efficiency.
+              It integrates enriched text-source knowledge, image-source knowledge with region annotations on both
+              object- and part-level, and the alignment between modalities.
+              As a specific case study, we construct AnimalKB, a comprehensive animal knowledge base comprising
+              knowledge extracted from 406 encyclopedic articles, 400k images, and 480k region annotations.
+              Through a series of experiments, we showcase how AnimalKB enhances object-level visual tasks such as
+              zero-shot recognition and fine-grained VQA, serves as outstanding benchmarks for knowledge graph
+              completion and part segmentation tasks.
+              Our findings highlight the potential of automatic construction of visual knowledge bases to further
+              improve visual understanding and the corresponding practical applications.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
+  <!-- End paper abstract -->
 
 
-<!-- Construction Pipeline Section -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Automatic Construction Pipeline</h2>
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <figure class="image">
-          <img src="static/pdfs/pipeline3.png" alt="Construction Pipeline Diagram"
-            style="width: 100%; height: auto;">
-          <figcaption class="has-text-centered is-size-6">
-            Overview of the VisKnow construction pipeline. The process integrates multi-modal knowledge from both
-            textual and visual sources to build a comprehensive visual knowledge base.
-          </figcaption>
-        </figure>
+  <!-- Construction Pipeline Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Automatic Construction Pipeline</h2>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <figure class="image">
+            <img src="static/pdfs/pipeline3.jpg" alt="Construction Pipeline Diagram" style="width: 100%; height: auto;">
+            <figcaption class="has-text-centered is-size-6">
+              Overview of the VisKnow construction pipeline. The process integrates multi-modal knowledge from both
+              textual and visual sources to build a comprehensive visual knowledge base.
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Examples of the AnimalKB</h2>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Examples of the AnimalKB</h2>
 
-    <div class="columns is-align-items-start" style="margin-top: 20px;">
-      <!-- 左侧按钮列，固定宽度 -->
-      <div class="column is-narrow" style="width: 120px;">
-        <div class="buttons is-flex is-flex-direction-column" style="align-items: flex-start; width: 100%;">
-          <button class="button is-link is-light" style="width: 100%;" onclick="loadGraph('antelope_graph.json')">Antelope</button>
-          <button class="button is-link is-light" style="width: 100%;" onclick="loadGraph('elephant_graph.json')">Elephant</button>
-          <button class="button is-link is-light" style="width: 100%;" onclick="loadGraph('leopard_graph.json')">Leopard</button>
+      <div class="columns is-align-items-start" style="margin-top: 20px;">
+        <!-- 左侧按钮列，固定宽度 -->
+        <div class="column is-narrow" style="width: 120px;">
+          <div class="buttons is-flex is-flex-direction-column" style="align-items: flex-start; width: 100%;">
+            <button class="button is-link is-light" style="width: 100%;"
+              onclick="loadGraph('antelope_graph.json')">Antelope</button>
+            <button class="button is-link is-light" style="width: 100%;"
+              onclick="loadGraph('elephant_graph.json')">Elephant</button>
+            <button class="button is-link is-light" style="width: 100%;"
+              onclick="loadGraph('leopard_graph.json')">Leopard</button>
+          </div>
+        </div>
+
+        <!-- 右侧图表区域 -->
+        <div class="column">
+          <div id="graph" style="width: 100%; height: 600px; border: 1px solid #ddd;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-title">KB-assisted Downstream Tasks</h2>
+
+      <h3 class="title is-4 has-text-centered table-title">Table 2. Zero-shot Performance of CLIP with KB</h3>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Setting</th>
+                  <th>ViT-B/16</th>
+                  <th>ViT-L/14</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CLIP Baseline</td>
+                  <td>67.58</td>
+                  <td>74.26</td>
+                </tr>
+                <tr>
+                  <td>CLIP Subclass</td>
+                  <td>69.38</td>
+                  <td>76.13</td>
+                </tr>
+                <tr>
+                  <td>CLIP Subclass + Visual Knowledge</td>
+                  <td>69.92</td>
+                  <td>77.17</td>
+                </tr>
+                <tr>
+                  <td>CLIP Subclass + Non-visual Knowledge</td>
+                  <td>70.33</td>
+                  <td>77.32</td>
+                </tr>
+                <tr>
+                  <td class="highlight">CLIP Subclass + All Knowledge</td>
+                  <td class="highlight">70.49</td>
+                  <td class="highlight">77.55</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
-      <!-- 右侧图表区域 -->
-      <div class="column">
-        <div id="graph" style="width: 100%; height: 600px; border: 1px solid #ddd;"></div>
+      <h3 class="title is-4 has-text-centered table-title">Table 3. Performance of Closed-Source MLLMs with KB</h3>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Visual</th>
+                  <th>Non-visual</th>
+                  <th>All</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="subheader-row">
+                  <td colspan="4">without KB</td>
+                </tr>
+                <tr>
+                  <td>gpt-4o (1120)</td>
+                  <td>78.95</td>
+                  <td>76.81</td>
+                  <td>77.88</td>
+                </tr>
+                <tr>
+                  <td>gpt-4o (0806)</td>
+                  <td>79.36</td>
+                  <td>77.13</td>
+                  <td>78.25</td>
+                </tr>
+                <tr>
+                  <td>gpt-4o-mini</td>
+                  <td>69.78</td>
+                  <td>66.86</td>
+                  <td>68.32</td>
+                </tr>
+                <tr>
+                  <td>gemini-2.0-flash</td>
+                  <td class="underline">84.95</td>
+                  <td class="underline">81.96</td>
+                  <td class="underline">83.46</td>
+                </tr>
+                <tr>
+                  <td>gemini-1.5-pro</td>
+                  <td>78.68</td>
+                  <td>78.68</td>
+                  <td>79.71</td>
+                </tr>
+                <tr>
+                  <td>claude-3.5-sonnet</td>
+                  <td>81.05</td>
+                  <td>77.82</td>
+                  <td>79.44</td>
+                </tr>
+                <tr>
+                  <td>claude-3-haiku</td>
+                  <td>63.82</td>
+                  <td>59.14</td>
+                  <td>61.48</td>
+                </tr>
+                <tr class="subheader-row">
+                  <td colspan="4">with KB</td>
+                </tr>
+                <tr>
+                  <td>gpt-4o (1120)</td>
+                  <td>98.26</td>
+                  <td>97.87</td>
+                  <td>98.06</td>
+                </tr>
+                <tr>
+                  <td>gpt-4o (0806)</td>
+                  <td class="underline">98.68</td>
+                  <td class="underline">97.79</td>
+                  <td class="underline">98.24</td>
+                </tr>
+                <tr>
+                  <td>gpt-4o-mini</td>
+                  <td>94.04</td>
+                  <td>95.07</td>
+                  <td>94.56</td>
+                </tr>
+                <tr>
+                  <td>gemini-2.0-flash</td>
+                  <td>98.16</td>
+                  <td>97.65</td>
+                  <td>97.90</td>
+                </tr>
+                <tr>
+                  <td>gemini-1.5-pro</td>
+                  <td>97.01</td>
+                  <td>96.54</td>
+                  <td>96.78</td>
+                </tr>
+                <tr>
+                  <td>claude-3.5-sonnet</td>
+                  <td>97.43</td>
+                  <td>96.72</td>
+                  <td>97.07</td>
+                </tr>
+                <tr>
+                  <td>claude-3-haiku</td>
+                  <td>92.06</td>
+                  <td>92.21</td>
+                  <td>92.13</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="title is-4 has-text-centered table-title">Table 4. Performance of Open-Source MLLMs with KB</h3>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Size</th>
+                  <th>Visual</th>
+                  <th>Non-visual</th>
+                  <th>All</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="subheader-row">
+                  <td colspan="5">without KB</td>
+                </tr>
+                <tr>
+                  <td>DeepSeek-VL2</td>
+                  <td>27.5 B</td>
+                  <td>73.75</td>
+                  <td class="underline">75.69</td>
+                  <td class="underline">74.72</td>
+                </tr>
+                <tr>
+                  <td>DeepSeek-VL2-Small</td>
+                  <td>16.1 B</td>
+                  <td>66.13</td>
+                  <td>68.70</td>
+                  <td>67.41</td>
+                </tr>
+                <tr>
+                  <td>Qwen2.5-VL-7B</td>
+                  <td>8.3 B</td>
+                  <td>74.44</td>
+                  <td>71.25</td>
+                  <td>72.84</td>
+                </tr>
+                <tr>
+                  <td>Qwen2-VL-7B</td>
+                  <td>8.3 B</td>
+                  <td>74.56</td>
+                  <td>72.84</td>
+                  <td>73.70</td>
+                </tr>
+                <tr>
+                  <td>InternVL2.5-8B</td>
+                  <td>8.1 B</td>
+                  <td>71.27</td>
+                  <td>69.09</td>
+                  <td>70.18</td>
+                </tr>
+                <tr>
+                  <td>InternVL2.5-26B</td>
+                  <td>25.5 B</td>
+                  <td class="underline">76.52</td>
+                  <td>72.55</td>
+                  <td>74.53</td>
+                </tr>
+                <tr>
+                  <td>LLaVA-v1.6-Vicuna-7B</td>
+                  <td>7.1 B</td>
+                  <td>65.76</td>
+                  <td>60.91</td>
+                  <td>63.33</td>
+                </tr>
+                <tr>
+                  <td>LLaVA-Next-Llama3-8B</td>
+                  <td>8.4 B</td>
+                  <td>65.47</td>
+                  <td>63.75</td>
+                  <td>64.61</td>
+                </tr>
+                <tr>
+                  <td>LLaVA-OV-Qwen2-7B</td>
+                  <td>8.0 B</td>
+                  <td>71.94</td>
+                  <td>65.27</td>
+                  <td>68.60</td>
+                </tr>
+                <tr class="subheader-row">
+                  <td colspan="5">with KB</td>
+                </tr>
+                <tr>
+                  <td>DeepSeek-VL2</td>
+                  <td>27.5 B</td>
+                  <td>84.66</td>
+                  <td>85.10</td>
+                  <td>84.88</td>
+                </tr>
+                <tr>
+                  <td>DeepSeek-VL2-Small</td>
+                  <td>16.1 B</td>
+                  <td>85.39</td>
+                  <td>84.73</td>
+                  <td>85.06</td>
+                </tr>
+                <tr>
+                  <td>Qwen2.5-VL-7B</td>
+                  <td>8.3 B</td>
+                  <td>87.06</td>
+                  <td>85.42</td>
+                  <td>86.24</td>
+                </tr>
+                <tr>
+                  <td>Qwen2-VL-7B</td>
+                  <td>8.3 B</td>
+                  <td>87.67</td>
+                  <td>86.91</td>
+                  <td>87.29</td>
+                </tr>
+                <tr>
+                  <td>InternVL2.5-8B</td>
+                  <td>8.1 B</td>
+                  <td>87.23</td>
+                  <td>86.47</td>
+                  <td>86.85</td>
+                </tr>
+                <tr>
+                  <td>InternVL2.5-26B</td>
+                  <td>25.5 B</td>
+                  <td class="underline">87.99</td>
+                  <td class="underline">88.04</td>
+                  <td class="underline">88.01</td>
+                </tr>
+                <tr>
+                  <td>LLaVA-v1.6-Vicuna-7B</td>
+                  <td>7.1 B</td>
+                  <td>80.71</td>
+                  <td>80.86</td>
+                  <td>80.78</td>
+                </tr>
+                <tr>
+                  <td>LLaVA-Next-Llama3-8B</td>
+                  <td>8.4 B</td>
+                  <td>83.41</td>
+                  <td>84.19</td>
+                  <td>83.80</td>
+                </tr>
+                <tr>
+                  <td>LLaVA-OV-Qwen2-7B</td>
+                  <td>8.0 B</td>
+                  <td>83.28</td>
+                  <td>81.81</td>
+                  <td>82.55</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-title">KB as Benchmark</h2>
+
+      <h3 class="title is-4 has-text-centered table-title">Table 5. Performance of KGC models on link prediction task
+      </h3>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>MRR</th>
+                  <th>HITS@1</th>
+                  <th>HITS@3</th>
+                  <th>HITS@10</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="subheader-row">
+                  <td colspan="5">Embedding-based methods</td>
+                </tr>
+                <tr>
+                  <td>TransE</td>
+                  <td>18.1</td>
+                  <td>11.5</td>
+                  <td>22.0</td>
+                  <td>29.8</td>
+                </tr>
+                <tr>
+                  <td>ComplEx</td>
+                  <td>12.0</td>
+                  <td>10.7</td>
+                  <td>12.2</td>
+                  <td>14.7</td>
+                </tr>
+                <tr>
+                  <td>DistMult</td>
+                  <td>11.0</td>
+                  <td>9.2</td>
+                  <td>11.3</td>
+                  <td>14.1</td>
+                </tr>
+                <tr>
+                  <td>RotatE</td>
+                  <td>19.6</td>
+                  <td>15.8</td>
+                  <td>21.4</td>
+                  <td>26.5</td>
+                </tr>
+                <tr class="subheader-row">
+                  <td colspan="5">Text-based methods</td>
+                </tr>
+                <tr>
+                  <td>KG-Bert</td>
+                  <td>21.1</td>
+                  <td>12.3</td>
+                  <td>23.9</td>
+                  <td>38.2</td>
+                </tr>
+                <tr>
+                  <td>StAR</td>
+                  <td>30.9</td>
+                  <td>23.6</td>
+                  <td>33.7</td>
+                  <td>44.6</td>
+                </tr>
+                <tr>
+                  <td>SimKGC</td>
+                  <td class="highlight">38.6</td>
+                  <td class="highlight">32.4</td>
+                  <td class="highlight">40.7</td>
+                  <td class="highlight">50.2</td>
+                </tr>
+                <tr class="subheader-row">
+                  <td colspan="5">LLM-based methods</td>
+                </tr>
+                <tr>
+                  <td>gpt-4o (0806)</td>
+                  <td>42.9</td>
+                  <td class="highlight">34.3</td>
+                  <td>46.0</td>
+                  <td>60.8</td>
+                </tr>
+                <tr>
+                  <td>gemini-1.5-pro</td>
+                  <td class="highlight">44.2</td>
+                  <td>28.8</td>
+                  <td class="highlight">52.3</td>
+                  <td class="highlight">81.1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="title is-4 has-text-centered table-title">Table 6. Performance comparison of models on instance
+        segmentation task</h3>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Finetune</th>
+                  <th>Total AP</th>
+                  <th>AP50</th>
+                  <th>AP75</th>
+                  <th>head</th>
+                  <th>torso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">vlpart</td>
+                  <td>orig</td>
+                  <td>5.09</td>
+                  <td>8.86</td>
+                  <td>5.23</td>
+                  <td>18.12</td>
+                  <td>4.33</td>
+                </tr>
+                <tr>
+                  <td>+ kb41</td>
+                  <td>16.07</td>
+                  <td>27.38</td>
+                  <td>16.70</td>
+                  <td>27.39</td>
+                  <td>24.32</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">partglee</td>
+                  <td>orig</td>
+                  <td>14.50</td>
+                  <td>25.96</td>
+                  <td>14.28</td>
+                  <td>43.16</td>
+                  <td>17.91</td>
+                </tr>
+                <tr>
+                  <td>+ kb41</td>
+                  <td>31.98</td>
+                  <td>50.63</td>
+                  <td>32.78</td>
+                  <td>55.21</td>
+                  <td>41.36</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="title is-4 has-text-centered table-title">Table 7. Performance comparison of models on mIoU, fwIoU,
+        IoU-part metrics</h3>
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="table-container">
+            <div style="overflow-x: auto;">
+              <table class="table is-bordered is-striped is-hoverable is-fullwidth metrics-table">
+                <thead>
+                  <tr>
+                    <th>Model</th>
+                    <th>Finetune</th>
+                    <th>mIoU</th>
+                    <th>fwIoU</th>
+                    <th>IoU-head</th>
+                    <th>ear</th>
+                    <th>eye</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="2">clipseg</td>
+                    <td>orig</td>
+                    <td>7.47</td>
+                    <td>16.16</td>
+                    <td>35.38</td>
+                    <td>18.92</td>
+                    <td>0.09</td>
+                  </tr>
+                  <tr>
+                    <td>+ kb41</td>
+                    <td>14.40</td>
+                    <td>37.61</td>
+                    <td>55.87</td>
+                    <td>3.71</td>
+                    <td>0.11</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">partglee</td>
+                    <td>orig</td>
+                    <td>24.24</td>
+                    <td>37.97</td>
+                    <td class="highlight">55.84</td>
+                    <td>41.56</td>
+                    <td>8.83</td>
+                  </tr>
+                  <tr>
+                    <td>+ kb41</td>
+                    <td class="highlight">36.87</td>
+                    <td class="highlight">44.96</td>
+                    <td>48.62</td>
+                    <td>25.61</td>
+                    <td class="highlight">37.86</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">vlpart<sub>sem</sub></td>
+                    <td>orig</td>
+                    <td>7.43</td>
+                    <td>9.19</td>
+                    <td>15.77</td>
+                    <td>20.72</td>
+                    <td>2.71</td>
+                  </tr>
+                  <tr>
+                    <td>+ kb41</td>
+                    <td>25.77</td>
+                    <td>42.49</td>
+                    <td>45.98</td>
+                    <td class="highlight">54.19</td>
+                    <td>15.45</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<!--BibTex citation -->
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>BibTex Code Here. To Be Updated.</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+            <p>
+              © 2025 Institute of Computing Technology, Chinese Academy of Sciences | Academic Use
+            </p>
 
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 
-  </body>
-  </html>
+</body>
 
-
+</html>
